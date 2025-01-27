@@ -3,7 +3,7 @@
 // @namespace  http://www.manuelgeier.com/
 // @version    1.6.3
 // @description  Script to help you to get into the group you want. Opens automatically the right panel, registers automatically and confirms your registration automatically. If you don't want the script to do everything automatically, the focus is already set on the right button, so you only need to confirm. There is also an option available to auto refresh the page, if the registration button is not available yet, so you can open the site and watch the script doing its work. You can also set a specific time when the script should reload the page and start.
-// @match      https://tiss.tuwien.ac.at/*
+// @match      https://campus.meduniwien.ac.at/med.campus/ee/ui/ca2/app/desktop/#/slc.tm.mm/registration?$ctx=&selectedSemester=147&selectedRecSemester=4.&selectedCurriculum=15*
 // @copyright  2020 Manuel Geier, MIT License
 // @require    http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // ==/UserScript==
@@ -104,7 +104,7 @@ SOFTWARE.
         registrationType: "group",
 
         // name of you the group you want to join (only for registrationType 'group') [String]
-        nameOfGroup: "Gruppe 001",
+        nameOfGroup: "Gruppe 50",
 
         // name of the exam which you want to join (only for registrationType 'exam') [String]
         nameOfExam: "Name Of Exam",
@@ -128,7 +128,7 @@ SOFTWARE.
         lvaSemesterCheckEnabled: true,
 
         // only if the semester is right, the script is enabled [String]
-        lvaSemester: "2019W",
+        lvaSemester: "2025S",
 
         // autoGoToSemester: true,   // coming soon
 
@@ -160,7 +160,7 @@ SOFTWARE.
         // define the specific time the script should start [Date]
         // new Date(year, month, day, hours, minutes, seconds, milliseconds)
         // note: months start with 0
-        specificStartTime: new Date(2020, 1 - 1, 9, 20, 27, 0, 0),
+        specificStartTime: new Date(2025, 01, 29, 17, 30, 0, 0),
 
         // if a specific time is defined, the script will refresh some ms sooner to adjust a delay [Integer]
         delayAdjustmentInMs: 300,
